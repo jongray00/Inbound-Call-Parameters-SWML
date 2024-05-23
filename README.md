@@ -35,19 +35,20 @@ This application is designed to handle inbound calls using SignalWire's SignalWi
    cd Inbound-Call-Parameters-SWML
    ```
 
-   Install Dependencies
+
+   ##Install Dependencies
 
 Install the necessary dependencies using npm.
 
-bash
-Copy code
+```bash
 npm install
-Create the SWML Script Application
+```
+
+## Create the SWML Script Application
 
 Save the following code in a file named swml-inbound.js.
 
-javascript
-Copy code
+```javascript
 const express = require('express');
 const bodyParser = require('body-parser');
 const fetch = require('node-fetch');
@@ -139,6 +140,7 @@ async function sendExternalApiCall(from, to, date) {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+```
 Run the Application
 
 Start the application using Node.js.
